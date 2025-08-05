@@ -1,0 +1,111 @@
+# SleepWellness Quiz API Test Requests
+# Use with REST Client extension in VS Code or similar tools
+
+### Health Check
+GET http://localhost:3000/quiz/health
+
+### Submit Quiz - Blue Light Sensitive Profile
+POST http://localhost:3000/quiz/submit
+Authorization: Bearer YOUR_OKTA_JWT_TOKEN_HERE
+Content-Type: application/json
+
+{
+  "answers": [
+    {
+      "questionId": 1,
+      "answer": "after-12"
+    },
+    {
+      "questionId": 2,
+      "answer": "15-30"
+    },
+    {
+      "questionId": 3,
+      "answer": "7"
+    },
+    {
+      "questionId": 4,
+      "answer": "daily"
+    },
+    {
+      "questionId": 5,
+      "answer": "fair"
+    },
+    {
+      "questionId": 6,
+      "answer": "sometimes"
+    }
+  ]
+}
+
+### Submit Quiz - High Stress Sleeper Profile
+POST http://localhost:3000/quiz/submit
+Authorization: Bearer YOUR_OKTA_JWT_TOKEN_HERE
+Content-Type: application/json
+
+{
+  "answers": [
+    {
+      "questionId": 1,
+      "answer": "11-12"
+    },
+    {
+      "questionId": 2,
+      "answer": "over-60"
+    },
+    {
+      "questionId": 3,
+      "answer": "5"
+    },
+    {
+      "questionId": 4,
+      "answer": "sometimes"
+    },
+    {
+      "questionId": 5,
+      "answer": "poor"
+    },
+    {
+      "questionId": 6,
+      "answer": "frequently"
+    }
+  ]
+}
+
+### Submit Quiz - Optimal Sleeper Profile
+POST http://localhost:3000/quiz/submit
+Authorization: Bearer YOUR_OKTA_JWT_TOKEN_HERE
+Content-Type: application/json
+
+{
+  "answers": [
+    {
+      "questionId": 1,
+      "answer": "before-10"
+    },
+    {
+      "questionId": 2,
+      "answer": "under-15"
+    },
+    {
+      "questionId": 3,
+      "answer": "8"
+    },
+    {
+      "questionId": 4,
+      "answer": "never"
+    },
+    {
+      "questionId": 5,
+      "answer": "excellent"
+    },
+    {
+      "questionId": 6,
+      "answer": "never"
+    }
+  ]
+}
+
+### Get Quiz History
+GET http://localhost:3000/quiz/history
+Authorization: Bearer YOUR_OKTA_JWT_TOKEN_HERE
