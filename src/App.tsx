@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from './contexts/ThemeContext';
-import ThemeToggle from './components/ThemeToggle';
+import { ThemeProvider } from './contexts/ThemeContext.jsx';
+import ThemeToggle from './components/ThemeToggle.jsx';
 import Home from './pages/Home';
 import QuizPage from './pages/QuizPage';
 import ResultPage from './pages/ResultPage';
