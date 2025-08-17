@@ -1,4 +1,4 @@
-# SleepWellness Quiz API
+# SleepWellness Quiz App
 
 A NestJS backend API for the SleepWellness quiz application with JWT authentication via Okta, PostgreSQL database integration using Prisma ORM, and comprehensive sleep profile analysis.
 
